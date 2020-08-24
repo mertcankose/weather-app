@@ -27,7 +27,7 @@ app.post("/",function(req,res){
     console.log(response.statusCode); //control 200 OK
     
     response.on("data",function(data){
-      console.log("Data:" + data);  //this gives us buffer(hexadecimal codes). instead, you have to rotate it in JSON format, and if you print it like this, it comes in HEXADECIMAL.
+      //console.log("Data:" + data);  //this gives us buffer(hexadecimal codes). instead, you have to rotate it in JSON format, and if you print it like this, it comes in HEXADECIMAL.
       const weatherData = JSON.parse(data);
       const temp = weatherData.main.temp;
       const feel = weatherData.main.feels_like;
@@ -46,5 +46,5 @@ app.post("/",function(req,res){
 });
 
 app.listen(process.env.PORT || 5000, '0.0.0.0', () => {
-  console.log(`Server is running on port ${port}.`);
+  console.log("Server is running on port.");
 });
