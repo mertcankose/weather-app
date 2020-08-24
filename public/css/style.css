@@ -8,11 +8,11 @@
 body {
   background-image: url("./images/mountain.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   text-align: center;
   letter-spacing: 4px;
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
 }
 
 body .container {

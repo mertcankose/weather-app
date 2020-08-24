@@ -1,10 +1,8 @@
 //jshint esversion:6
-
 const express = require("express");
 const https = require("https"); //the structure that allows us to get what we want from the data we have. you don't need to download this module to a native structure.Its'a native module.
 const bodyParser = require("body-parser");
 require('dotenv').config(); //for security (api keys)
-
 
 const app = express();
 
@@ -47,6 +45,8 @@ app.post("/",function(req,res){
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000.");
+const port = process.env.PORT || 3000; //if there is no port in local enviroment process.env.PORT = undefined
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
 });
