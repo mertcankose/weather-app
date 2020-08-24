@@ -45,8 +45,6 @@ app.post("/",function(req,res){
   });
 });
 
-const port = process.env.PORT || 3000; //if there is no port in local enviroment process.env.PORT = undefined
-
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running on port ${port}.`);
 });
