@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/mountain.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body .container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .main-part {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main-part h1 {
+  color: #142850;
+  font-size: 56px;
+}
+
+body .container .main-part .form-box {
+  width: 600px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+body .container .main-part .form-box label {
+  margin-bottom: 12px;
+  font-size: 32px;
+  color: #000839;
+}
+
+body .container .main-part .form-box input {
+  padding: 6px 2px;
+  outline: none;
+  width: 400px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-weight: 300;
+  color: #faf4f4;
+}
+
+body .container .main-part .form-box button {
+  margin-top: calc(12px + 15px);
+  padding: 6px 36px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  letter-spacing: 2px;
+}
+
+body .container .main-part .form-box button:hover {
+  background-color: #f0f0f0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+body .footer {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
