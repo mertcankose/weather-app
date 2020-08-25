@@ -1,8 +1,6 @@
 # Weather-App
 
-# TodoList
-TodoList-EJS-MONGO-NODE.JS
-
+WeatherApp-NODE.JS
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
